@@ -58,8 +58,15 @@ func Start(isSwag bool, configPath string) {
 		interfaceGroup.GET("/memberBill/businessType", api.MemberBillBusinessType)
 		interfaceGroup.GET("/coinConf/list", api.CoinConfList)
 		// 回调
-		interfaceGroup.POST("/recharge/call", api.RechargeCall)
-		interfaceGroup.POST("/withdraw/call", api.WithdrawCall)
+		interfaceGroup.POST("/recharge/call", api.RechargeCall) // 需要和 api 里面的 recharge.go 文件里面的路由一致
+		// 这是 recharge.go 文件的路由代码地址 callUrl := config.CONF.Wallet.CallUrl + "/recharge/call"
+
+		interfaceGroup.POST("/withdraw/call", api.WithdrawCall) // 需要和 api 里面的 withdraw.go 文件里面的路由一致
+		// 这是 withdraw.go 文件的路由代码地址 callUrl := config.CONF.Wallet.CallUrl + "/withdraw/call"
+
+		// 登录
+		interfaceGroup.POST("/login", api.AuthLoginByPwd)
+		interfaceGroup.POST("/register", api.AuthRegister)
 
 		//authId := interfaceGroup.Group("/", api.AuthId())
 		//{
@@ -71,6 +78,9 @@ func Start(isSwag bool, configPath string) {
 			auth.GET("/memberBill/list", api.MemberBillList)
 			auth.GET("/memberCoin/info", api.MemberCoinInfo)
 			auth.GET("/memberCoin/list", api.MemberCoinList)
+
+			// 获取登录用户信息
+			auth.GET("/member/loginInfo", api.MemberLoginInfo)
 
 			// 币种
 			auth.GET("/recharge/address", api.RechargeAddress)
