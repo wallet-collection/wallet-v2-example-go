@@ -15,7 +15,6 @@ import (
 	"wallet/config"
 	"wallet/model"
 	"wallet/pkg/util"
-	"wallet/redis"
 )
 
 var big0 = decimal.NewFromInt(0)
@@ -142,24 +141,24 @@ func WithdrawCreate(c *gin.Context) {
 		}
 	}
 
-	rdb := redis.RDB
+	//rdb := redis.RDB
 
 	if member.Email != nil {
 		// 验证新验证码
-		err = biz.NewCodeBiz(rdb).Verify(biz.CodeTemplateSceneWithdraw, *member.Email, q.EmailCode, 0)
-		if err != nil {
-			res.APIResponse(c, res.ErrCodeErr, nil)
-			return
-		}
+		//err = biz.NewCodeBiz(rdb).Verify(biz.CodeTemplateSceneWithdraw, *member.Email, q.EmailCode, 0)
+		//if err != nil {
+		//	res.APIResponse(c, res.ErrCodeErr, nil)
+		//	return
+		//}
 	}
 
 	if member.Tel != nil {
 		// 验证新验证码
-		err = biz.NewCodeBiz(rdb).Verify(biz.CodeTemplateSceneWithdraw, *member.Tel, q.TelCode, 0)
-		if err != nil {
-			res.APIResponse(c, res.ErrCodeErr, nil)
-			return
-		}
+		//err = biz.NewCodeBiz(rdb).Verify(biz.CodeTemplateSceneWithdraw, *member.Tel, q.TelCode, 0)
+		//if err != nil {
+		//	res.APIResponse(c, res.ErrCodeErr, nil)
+		//	return
+		//}
 	}
 
 	walletClient := client.WalletClientGlobal
