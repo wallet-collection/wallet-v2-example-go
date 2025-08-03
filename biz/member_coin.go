@@ -4,7 +4,7 @@ import (
 	"github.com/shopspring/decimal"
 	"gorm.io/gorm"
 	"time"
-	"wallet/model"
+	"wallet-example/model"
 )
 
 type MemberCoinBiz struct {

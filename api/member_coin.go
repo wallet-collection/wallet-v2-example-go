@@ -2,11 +2,11 @@ package api
 
 import (
 	"github.com/gin-gonic/gin"
-	"wallet/api/req"
-	"wallet/api/res"
-	"wallet/biz"
-	"wallet/model"
-	"wallet/pkg/util"
+	"wallet-example/api/req"
+	"wallet-example/api/res"
+	"wallet-example/biz"
+	"wallet-example/model"
+	"wallet-example/pkg/util"
 )
 
 // MemberCoinInfo 获取列表

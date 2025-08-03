@@ -4,7 +4,7 @@ import (
 	"context"
 	"github.com/go-redis/redis/v8"
 	"time"
-	"wallet/config"
+	"wallet-example/config"
 )
 
 var RDB *DB

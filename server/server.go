@@ -3,12 +3,12 @@ package server
 import (
 	"fmt"
 	"github.com/gin-gonic/gin"
-	"wallet/api"
-	"wallet/client"
-	"wallet/config"
-	"wallet/job"
-	"wallet/model"
-	"wallet/redis"
+	"wallet-example/api"
+	"wallet-example/client"
+	"wallet-example/config"
+	"wallet-example/job"
+	"wallet-example/model"
+	"wallet-example/redis"
 )
 
 // Start 启动服务

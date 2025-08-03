@@ -8,13 +8,13 @@ import (
 	"net/http"
 	"strconv"
 	"time"
-	"wallet/api/req"
-	"wallet/api/res"
-	"wallet/biz"
-	"wallet/client"
-	"wallet/config"
-	"wallet/model"
-	"wallet/pkg/util"
+	"wallet-example/api/req"
+	"wallet-example/api/res"
+	"wallet-example/biz"
+	"wallet-example/client"
+	"wallet-example/config"
+	"wallet-example/model"
+	"wallet-example/pkg/util"
 )
 
 var big0 = decimal.NewFromInt(0)

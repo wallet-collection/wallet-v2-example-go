@@ -1,6 +1,6 @@
 package main
 
-import "wallet/cmd"
+import "wallet-example/cmd"
 
 // 是否加载文档
 var isSwag bool

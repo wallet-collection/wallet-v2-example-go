@@ -3,8 +3,8 @@ package api
 import (
 	"github.com/gin-gonic/gin"
 	"net/http"
-	"wallet/api/res"
-	"wallet/pkg/util"
+	"wallet-example/api/res"
+	"wallet-example/pkg/util"
 )
 
 // AuthRequired 认证中间件

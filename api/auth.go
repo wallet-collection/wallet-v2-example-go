@@ -6,10 +6,10 @@ import (
 	"gorm.io/gorm"
 	"strings"
 	"time"
-	"wallet/api/req"
-	"wallet/api/res"
-	"wallet/model"
-	"wallet/pkg/util"
+	"wallet-example/api/req"
+	"wallet-example/api/res"
+	"wallet-example/model"
+	"wallet-example/pkg/util"
 )
 
 // AuthLoginByPwd 登录

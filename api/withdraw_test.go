@@ -8,10 +8,10 @@ import (
 	"strconv"
 	"testing"
 	"time"
-	"wallet/api/req"
-	"wallet/biz"
-	"wallet/config"
-	"wallet/model"
+	"wallet-example/api/req"
+	"wallet-example/biz"
+	"wallet-example/config"
+	"wallet-example/model"
 )
 
 func TestWithdrawCreate(t *testing.T) {

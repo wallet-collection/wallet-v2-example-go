@@ -3,7 +3,7 @@ package biz
 import (
 	"errors"
 	"strconv"
-	"wallet/redis"
+	"wallet-example/redis"
 )
 
 const (

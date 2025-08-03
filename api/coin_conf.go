@@ -2,9 +2,9 @@ package api
 
 import (
 	"github.com/gin-gonic/gin"
-	"wallet/api/req"
-	"wallet/api/res"
-	"wallet/model"
+	"wallet-example/api/req"
+	"wallet-example/api/res"
+	"wallet-example/model"
 )
 
 // CoinConfList 获取列表

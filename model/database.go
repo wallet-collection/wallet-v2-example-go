@@ -7,7 +7,7 @@ import (
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/schema"
 	"time"
-	"wallet/config"
+	"wallet-example/config"
 )
 
 var DB *gorm.DB

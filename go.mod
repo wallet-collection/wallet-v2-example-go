@@ -1,4 +1,4 @@
-module wallet
+module wallet-example
 
 go 1.20
 

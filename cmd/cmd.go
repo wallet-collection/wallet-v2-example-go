@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"github.com/urfave/cli"
 	"os"
-	"wallet/server"
+	"wallet-example/server"
 )
 
 func Run(isSwag bool) {
