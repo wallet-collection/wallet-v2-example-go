@@ -1,0 +1,1 @@
+wallet-example.exe -c config/config-example.yml
